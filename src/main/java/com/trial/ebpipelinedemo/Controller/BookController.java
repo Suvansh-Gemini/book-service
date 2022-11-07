@@ -27,6 +27,7 @@ public class BookController {
     @GetMapping("/get/books")
     public List<Book> getBooks(){
        log.info("Inside getBooks() method in BookController with no parameters");
+       log.info("hello");
        return bookService.getBooks();
     }
 }
